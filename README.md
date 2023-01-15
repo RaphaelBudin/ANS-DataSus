@@ -1,6 +1,9 @@
 ### ANS-DataSus ###
 Repositório para tratamento de dados da ANS e DataSUS
 
+# Vídeo de Demonstração
+[![Demonstração deste projeto](https://img.youtube.com/vi/QgeYu0627u8/0.jpg)](https://www.youtube.com/watch?v=QgeYu0627u8)
+
 Os dados são obtidos no servidor FTP dos respectivos órgãos, em formato CSV.
 A extração e tratamento dos dados é feito via AWK, XSV e scripts linux (bash scripting).
 
@@ -25,6 +28,3 @@ Alguns scritps escritos em bash para extrair dados e correlações da ANS ou do 
 
 # Binários utilizados
 XSV - https://github.com/BurntSushi/xsv
-
-# Vídeo de Demonstração
-[![Demonstração deste projeto](https://img.youtube.com/vi/QgeYu0627u8/0.jpg)](https://www.youtube.com/watch?v=QgeYu0627u8)
