@@ -1,5 +1,8 @@
-### ANS-DataSus ###
+# ANS-DataSus
 Repositório para tratamento de dados da ANS e DataSUS
+
+# Binários utilizados
+XSV - https://github.com/BurntSushi/xsv
 
 # Vídeo de Demonstração
 [![Demonstração deste projeto](https://img.youtube.com/vi/QgeYu0627u8/0.jpg)](https://www.youtube.com/watch?v=QgeYu0627u8)
@@ -25,6 +28,3 @@ A extração e tratamento dos dados é feito via AWK, XSV e scripts linux (bash 
 - Arquivos CSV grandes
 # Utilitários ANS DataSUS
 Alguns scritps escritos em bash para extrair dados e correlações da ANS ou do DataSUS automaticamente.
-
-# Binários utilizados
-XSV - https://github.com/BurntSushi/xsv
