@@ -22,7 +22,7 @@ for PROCEDIMENTO in ${LISTA_PROCEDIMENTOS[@]}; do
         # 1 -> ID_EVENTO_ATENCAO_SAUDE
         # 17 a 20 -> CIDs 1 a 4
         # 29 -> Código do procedimento
-        xsv select 1,17,18,19,20,29 Agregado-GERAL-$ANO.csv | xsv search -v "I47|I48|I49" | xsv search $PROCEDIMENTO -o SEM_CID-$PROCEDIMENTO-$ANO.csv;
+        xsv select 1,17,18,19,20,29 Agregado-GERAL-$ANO.csv | xsv search -v "$CID1|$CID2|$CID3" | xsv search $PROCEDIMENTO -o SEM_CID-$PROCEDIMENTO-$ANO.csv;
 
         echo "Arquivo SEM_CID-$PROCEDIMENTO-$ANO.csv criado.";
     done

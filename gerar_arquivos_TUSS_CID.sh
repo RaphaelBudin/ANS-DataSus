@@ -10,9 +10,8 @@ LISTA_CID=("I47" "I48" "I49");
 for CODIGO in ${LISTACODIGOS[@]}; do
 	for ANO in ${LISTA_ANOS[@]}; do
 		for CID in ${LISTA_CID[@]}; do
-			# echo "Criando arquivo com Header";
-			# head -n 1 0-Agregado-DET-$ANO.csv > $CODIGO-DET-$ANO.csv;
 			echo "Processando código: $CODIGO do ANO $ANO";
+			# Gera um arquivo por CID
 			xsv search -d ',' "$CID" Agregado-Geral-$ANO.csv | xsv search $CODIGO -o $CID-$CODIGO-$ANO.csv;
 		done
 	done

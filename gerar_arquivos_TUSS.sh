@@ -9,8 +9,7 @@ LISTA_ANOS=("2017" "2018" "2019" "2020" "2021");
 for CODIGO in ${LISTACODIGOS[@]}; do
 	for ANO in ${LISTA_ANOS[@]}; do
 			echo "Processando código: $CODIGO do ANO $ANO";
-			# Deixa apenas os cids que começam com I4 e em branco
-			# xsv search $CODIGO Agregado-Geral-$ANO.csv -o $CODIGO-$ANO.csv ;
+			# Gera um arquivo que tem todos os anos do procedimento informado
 			xsv search $CODIGO Agregado-Geral-$ANO.csv >> $CODIGO.csv ;
 	done
 done
